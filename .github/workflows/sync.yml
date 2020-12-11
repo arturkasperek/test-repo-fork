@@ -5,6 +5,9 @@ jobs:
   repo-sync:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
     - name: Sync repo to branch
       uses: repo-sync/github-sync@v2
       with:
