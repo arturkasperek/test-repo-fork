@@ -10,5 +10,5 @@ jobs:
       with:
         source_repo: https://github.com/arturkasperek/test-repo-original.git
         source_branch: main
-        destination_branch: main
+        destination_branch: upstream
         github_token: ${{ secrets.PAT }}
